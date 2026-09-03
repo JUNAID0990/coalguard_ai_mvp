@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CoalGuard AI</title>
+    <link rel="stylesheet" href="/static/styles.css?v=logo-fix-2">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+
+<body>
+    <div class="app">
+        <aside>
+            <div class="brand">
+                <div class="logo"><img src="/static/logo.svg" alt="CoalGuard AI logo"></div>
+                <div><b>CoalGuard</b><span>AI Governance</span></div>
+            </div>
+                <nav><button class="nav active" data-page="dashboard">◈ Dashboard</button><button class="nav"
+                    data-page="mines">▦ Mines</button><button class="nav" data-page="map">⌖ GIS Map</button><button
+                    class="nav" data-page="graph">⌁ CoalGuard Graph</button><button class="nav" data-page="compliance">✓
+                    Compliance</button><button class="nav" data-page="inspections">◉ Inspections</button><button
+                    class="nav" data-page="violations">⚠ Violations</button><button class="nav" data-page="actions">↗
+                    Corrective Actions</button><button class="nav" data-page="risk">✦ Risk Intelligence</button><button
+                    class="nav" data-page="audit">▤ Audit Trail</button></nav>
+            <div class="sidefoot"><span class="dot"></span> Prototype Mode<br><small></small></div>
+        </aside>
+        <main>
+            <header>
+                <div>
+                    <div class="eyebrow">SMART GOVERNANCE PLATFORM</div>
+                    <h1 id="title">Command Dashboard</h1>
+                </div>
+                <div class="header-actions"><select id="mineSelect">
+                        <option>All Mines</option>
+                    </select>
+                    <div class="endpoint-links"><span class="endpoint-label"> <b>/</b></span><a href="/docs" target="_blank" rel="noopener">API Docs</a><a href="/" target="_blank" rel="noopener">Test-App</a></div>
+                    <div class="avatar">MG</div>
+                </div>
+            </header>
+            <section id="content"></section>
+        </main>
+    </div>
+    <div id="toast"></div>
+    <div id="loader" class="loader" role="status" aria-live="polite" aria-label="Loading">
+        <div class="loader-ring"></div><span>Loading CoalGuard data</span>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+
+</html>

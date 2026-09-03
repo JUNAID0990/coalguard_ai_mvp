@@ -1,0 +1,5 @@
+Synthetic mine-level feature dataset grounded in the supplied Coal Directory of India 2024-25 PDF (28-11-2025a-stc.pdf).
+Source-grounded counts: 373 operational coal mines and 20 operational lignite mines as of 31-03-2025; state allocations reproduced from the PDF tables.
+Mine-level safety, inspection, violation, action, incident, environmental, zone, and contractor fields are simulated because the source PDF provides mostly aggregated statistics and does not provide all requested fields per mine.
+Do not interpret simulated values as official mine-specific measurements.
+Rows: 393; columns: 47 including mine_id and state.
