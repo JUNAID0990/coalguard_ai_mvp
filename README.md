@@ -56,8 +56,4 @@ coalguard_ai_mvp/
 - Health endpoint
 - Clear synthetic-data / prototype disclaimer
 
-## Firebase
 
-This package keeps the ML API self-contained so the supplied PKL can run locally. Firebase can be added as the persistence layer for users, inspections, violations, actions, evidence, notifications, and audit logs. The current supplied dataset is not an event-level Firestore export, so the MVP does not fabricate those records.
-
-For a production build, add a Firebase Admin service account and implement Firestore repositories behind the existing service boundary. Do not put service-account credentials in the frontend.
