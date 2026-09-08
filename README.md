@@ -313,25 +313,6 @@ There are also endpoints for summary information, mines, compliance, inspections
 
 For the complete endpoint list and request/response schemas, run the project and open `/docs`.
 
-## Environment Variables
-
-The repository includes:
-
-```text
-.env.example
-```
-
-It currently contains placeholders for:
-
-```env
-FIREBASE_PROJECT_ID=
-GOOGLE_APPLICATION_CREDENTIALS=
-```
-
-These values are not required for the basic local dashboard. They are kept for possible cloud or Firebase integration later.
-
-Do not commit passwords, tokens, private keys, service-account files, or other credentials to the repository.
-
 ## Current Limitations
 
 CoalGuard is an MVP, so there are still several areas that need work before it would be suitable for production.
@@ -350,20 +331,6 @@ CoalGuard is an MVP, so there are still several areas that need work before it w
 - The displayed probabilities have not been calibrated for operational use.
 - No production-level accuracy claim should be made from this repository.
 
-### Security
-
-The current MVP does not include a complete authentication and authorization system. It should not be exposed to sensitive operational data on a public network without additional security controls.
-
-## Moving Toward Production
-
-A production version would need verified mine-level data as well as a stronger application and data foundation.
-
-### Data
-
-- Replace simulated fields with trusted records.
-- Keep source and timestamp information for important values.
-- Validate mine IDs, states, locations, and organizational mappings.
-- Add automated schema and data-quality checks.
 
 ### Model
 
@@ -459,8 +426,7 @@ Project: https://github.com/JUNAID0990/coalguard_ai_mvp
 
 ## License
 
-There is currently no `LICENSE` file in the repository. Until a license is added, permission to reuse or redistribute the project should not be assumed.
-
+There is currently no `LICENSE` file in the repository.
 ## In Short
 
 CoalGuard brings several parts of a mine safety workflow into one application:
